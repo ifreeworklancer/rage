@@ -141,7 +141,7 @@ let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
                 prevNextButtons: false,
                 contain: true,
                 draggable: false,
-                wrapAround: true,
+                wrapAround: false,
                 cellAlign: 'left',
                 cellSelector: '.cooperation-item'
             });
@@ -258,7 +258,7 @@ let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
                                 "type": "Feature",
                                 "geometry": {
                                     "type": "Point",
-                                    "coordinates": [30.510974, 50.449998],
+                                    "coordinates": [mapLong, mapLang],
                                 }
                             }]
                         }

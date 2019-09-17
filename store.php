@@ -1,12 +1,14 @@
 <?php
 $app_title = 'Rage';
-$phone = '+38 099 123 45 67';
+$phone = '+38 099 461 42 04';
 $email = 'rage@gmail.com';
 $address = 'г.Запорожье ул.Малая 3';
 $address_link = 'https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B0%D0%BB%D0%B0%D1%8F,+3,+%D0%97%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D0%B6%D1%8C%D0%B5,+%D0%97%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D0%B6%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+69000/@47.8564592,35.0921439,17z/data=!3m1!4b1!4m5!3m4!1s0x40dc66cc26139ca3:0x3ad3013bc2e9bc64!8m2!3d47.8564592!4d35.0943326';
 $mapLong = '35.094279';
 $mapLang = '47.856618';
 $mapIcon = '../images/icon/map-icon.png';
+$instagram = 'http://instagram.com';
+$facebook = 'http://facebook.com';
 
 $intro = [
     'title' => 'Приходите к нам!',
@@ -150,22 +152,23 @@ $cooperation = [
           'link' => 'https://instagram.com/muskul.shop?igshid=v4aotmb3n4uo',
           'image' => '../images/content/cooperation/cooperation-item.jpg',
       ],
-      /*[ Добавить будущих партнеров
-          'link' => 'http://google.com',
-          'image' => '../images/content/cooperation/cooperation-item.png',
-      ],
-      [
-          'link' => 'http://google.com',
-          'image' => '../images/content/cooperation/cooperation-item.png',
-      ],
-      [
-          'link' => 'http://google.com',
-          'image' => '../images/content/cooperation/cooperation-item.png',
-      ],
-      [
-          'link' => 'http://google.com',
-          'image' => '../images/content/cooperation/cooperation-item.png',
-      ], */
+    //   Добавить будущих партнеров
+    //   [
+    //       'link' => 'http://google.com',
+    //       'image' => '../images/content/cooperation/cooperation-item.png',
+    //   ],
+    //   [
+    //       'link' => 'http://google.com',
+    //       'image' => '../images/content/cooperation/cooperation-item.png',
+    //   ],
+    //   [
+    //       'link' => 'http://google.com',
+    //       'image' => '../images/content/cooperation/cooperation-item.png',
+    //   ],
+    //   [
+    //       'link' => 'http://google.com',
+    //       'image' => '../images/content/cooperation/cooperation-item.png',
+    //   ], 
   ]
 ];
 

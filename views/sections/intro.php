@@ -26,14 +26,14 @@
             Мы в соц.сетях
         </li>
         <li>
-            <a href="#">
+            <a href="<?= $facebook; ?>">
                 <svg width="15" height="15">
                     <use xlink:href="#facebook-icon"></use>
                 </svg>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="<?= $instagram; ?>">
                 <svg width="15" height="15">
                     <use xlink:href="#instagram-icon"></use>
                 </svg>

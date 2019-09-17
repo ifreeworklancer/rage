@@ -38,12 +38,12 @@
                                 Соц.сети
                             </div>
                             <div class="d-flex">
-                                <a href="#">
+                                <a href="<?= $facebook; ?>">
                                     <svg width="15" height="15">
                                         <use xlink:href="#facebook-icon"></use>
                                     </svg>
                                 </a>
-                                <a href="#">
+                                <a href="<?= $instagram; ?>">
                                     <svg width="15" height="15">
                                         <use xlink:href="#instagram-icon"></use>
                                     </svg>
