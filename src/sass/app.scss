@@ -1,0 +1,25 @@
+@import "config/variables";
+@import "config/placeholders";
+
+@import "~bootstrap/scss/bootstrap", "~flickity/dist/flickity.min.css";
+
+@import "base/body";
+@import "base/btn";
+@import "base/layout";
+@import "base/page";
+
+@import "modules/menu";
+@import "modules/forms";
+@import "modules/modal";
+@import "modules/slider";
+@import "modules/video";
+@import "modules/maps";
+
+@import "layout/header";
+@import "layout/intro";
+@import "layout/about";
+@import "layout/packages";
+@import "layout/trainer";
+@import "layout/cooperation";
+@import "layout/contacts";
+@import "layout/footer";

@@ -1,0 +1,93 @@
+.form-group {
+    position: relative;
+    padding: 10px 15px 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba($secondary, .4);
+    transition: .5s;
+
+    label {
+        font-size: .625rem;
+        margin-bottom: 5px;
+        color: $light;
+        transition: .5s;
+    }
+
+    .form-control {
+        padding: 0;
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        color: #fff;
+        font-size: .875rem;
+        height: auto;
+
+        &::-webkit-input-placeholder {
+            color: $secondary;
+        }
+
+        &::-moz-placeholder {
+            color: $secondary;
+        }
+
+        &:-ms-input-placeholder {
+            color: $secondary;
+        }
+
+        &:-moz-placeholder {
+            color: $secondary;
+        }
+    }
+
+    &.in-focus {
+        border: 1px solid rgba($secondary, 1);
+
+        label {
+            color: $primary;
+        }
+    }
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 0 auto 30px;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            width: 30%;
+            margin: 0;
+        }
+
+        .btn {
+            height: 100%;
+
+            @media (min-width: map_get($grid-breakpoints, sm)) {
+                padding: 0 $btn-padding-x;
+            }
+        }
+    }
+}
+
+.form-column {
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &--min {
+        max-width: 315px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

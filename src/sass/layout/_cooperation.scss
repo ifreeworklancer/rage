@@ -1,0 +1,62 @@
+#cooperation {
+  padding: 70px 0 120px;
+  background: $secondary;
+
+  .section-title {
+    margin-bottom: 50px;
+  }
+
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      left: -15px;
+      right: -15px;
+    }
+  }
+
+  .cooperation-slider {
+
+    .flickity-page-dots {
+      bottom: -70px;
+
+      li {
+        width: 20px;
+        height: 3px;
+        border-radius: 0;
+        background: $primary;
+        transform: skew(-20deg);
+        transition: .5s;
+      }
+    }
+
+    .cooperation-item {
+      width: 100%;
+      padding: 0 30px;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        width: 50%;
+        padding: 0 15px;
+      }
+
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        width: 33.3333%;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+
+        img {
+          max-width: 98%;
+          user-select: none;
+        }
+      }
+    }
+  }
+}

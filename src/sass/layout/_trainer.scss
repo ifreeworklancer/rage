@@ -1,0 +1,53 @@
+#trainer {
+  padding: 70px 0;
+  background: #000;
+
+  .trainer-item {
+
+    .subtitle {
+      margin-bottom: 15px;
+    }
+
+    .title {
+      margin-bottom: 25px;
+    }
+
+    .trainer-advantages {
+      display: flex;
+      flex-wrap: wrap;
+
+      &-item {
+        margin-right: 20px;
+        margin-bottom: 15px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &__title {
+          color: $primary;
+        }
+
+        &__description {
+
+          p {
+            font-size: .875rem;
+          }
+        }
+      }
+    }
+  }
+
+  .trainer-image {
+    @extend %img;
+    height: 100%;
+    min-height: 445px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      min-height: 500px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+%pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+%img {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+%decorItem {
+    position: relative;
+    z-index: 5;
+
+    .decor-left,
+    .decor-right {
+        @extend %pos;
+        z-index: -2;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: $body-bg;
+            z-index: 2;
+        }
+
+        &:before {
+            top: 0;
+        }
+
+        &:after {
+            bottom: 0;
+        }
+    }
+
+    .decor-left {
+        &:before,
+        &:after {
+            left: 0;
+        }
+    }
+
+    .decor-right {
+        &:before,
+        &:after {
+            right: 0;
+        }
+    }
+}

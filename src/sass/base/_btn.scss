@@ -1,0 +1,15 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  transition: .5s;
+  z-index: 5;
+  
+  &-outline-primary {
+    color: #fff;
+  }
+}

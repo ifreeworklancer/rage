@@ -1,0 +1,94 @@
+#intro {
+  height: auto;
+  padding: 150px 0 100px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    height: 100vh;
+    padding: 0;
+  }
+
+  &::before {
+    content: '';
+    @extend %pos;
+    background: rgba($dark, .8);
+  }
+
+  .intro-item {
+
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .description {
+      margin-bottom: 20px;
+    }
+  }
+
+  .social-list {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
+
+  .scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: block;
+
+    &__text {
+      position: absolute;
+      top: 20px;
+      left: -60px;
+      width: 80px;
+      font-size: .625rem;
+      font-family: $font-family-base;
+      letter-spacing: 1px;
+      color: #fff;
+      transform: rotate(-90deg);
+    }
+
+    &__icon {
+      position: relative;
+      width: 2px;
+      height: 90px;
+      background: rgba(#fff, .15);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 30px;
+        background: #fff;
+        box-shadow: 0 2px 35px 8px rgba(255, 255, 255, 0.2);
+        animation: scrollDown 1.5s linear forwards infinite;
+      }
+
+      @keyframes scrollDown {
+        0% {
+          top: 0;
+        }
+
+        25% {
+          top: 25%;
+        }
+
+        50% {
+          top: 50%;
+        }
+
+        75% {
+          top: 75%;
+        }
+
+        100% {
+          top: 100%;
+        }
+      }
+    }
+  }
+}
+

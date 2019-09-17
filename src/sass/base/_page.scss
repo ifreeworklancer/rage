@@ -1,0 +1,36 @@
+.page {
+  z-index: 5;
+
+  &-secondary {
+    height: 100vh;
+    @extend %img;
+
+    .decor-bg {
+      @extend %pos;
+      background: rgba(14, 14, 14, 0.9);
+      z-index: -3;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 45%;
+      z-index: -2;
+    }
+
+    .page-secondary-item {
+      text-align: center;
+
+      .title {
+        margin-bottom: 15px;
+      }
+
+      .page-subtitle {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

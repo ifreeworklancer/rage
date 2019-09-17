@@ -1,0 +1,53 @@
+.video-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -2;
+
+  video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.outer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(#000, 0.9);
+  z-index: 999999999999;
+
+  iframe {
+    @extend %pos;
+    margin: auto;
+  }
+
+  &::before, &::after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 2px;
+    content: '';
+    background-color: #fff;
+    z-index: 5;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

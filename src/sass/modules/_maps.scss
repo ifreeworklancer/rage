@@ -1,0 +1,24 @@
+.map-mask {
+  @extend %pos;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary;
+  font-size: 1.125rem;
+  font-family: $headings-font-family;
+  background: rgba($dark, .5);
+  cursor: pointer;
+  z-index: 3;
+  opacity: 1;
+  transition: .4s;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    font-size: $h3-font-size;
+  }
+
+
+  &.is-disabled {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

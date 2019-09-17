@@ -1,0 +1,60 @@
+.contacts-list {
+
+  .contacts-item {
+    margin-bottom: 20px;
+
+    .title {
+      font-size: .875rem;
+      color: $light;
+      margin-bottom: 10px;
+    }
+
+    a {
+      transition: .5s;
+
+      svg {
+        fill: #fff;
+        margin-right: 15px;
+        transition: .5s;
+      }
+
+      &:hover {
+        color: $primary;
+
+        svg {
+          fill: $primary;
+        }
+      }
+    }
+
+  }
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+
+  li {
+    margin-right: 15px;
+    font-size: .75rem;
+    color: #fff;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    a {
+      svg {
+        fill: #fff;
+        transition: .5s;
+      }
+
+      &:hover {
+
+        svg {
+          fill: $primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.slider-arrow {
+  display: flex;
+  justify-content: space-between;
+
+  .slider-arrow-item {
+    cursor: pointer;
+
+    svg {
+      fill: $primary;
+    }
+  }
+}

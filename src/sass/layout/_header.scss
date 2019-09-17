@@ -1,0 +1,50 @@
+#app-header {
+  position: fixed;
+  top: 0;
+  left: auto;
+  padding: 15px 30px;
+  width: 100%;
+  border-bottom: 1px solid rgba(#fff, .6);
+  transition: .5s;
+  z-index: 100;
+
+  &.app-header-secondary {
+    padding: 15px;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      padding: 15px 30px;
+    }
+  }
+
+  &.is-scroll {
+    padding: 10px 30px;
+    background: $dark;
+  }
+
+  .logo {
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .header-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+
+    .contacts-list {
+      margin-right: 25px;
+
+      .contacts-item {
+        margin-bottom: 0;
+      }
+    }
+
+    .btn {
+      margin-right: 25px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+#contacts {
+  padding: 40px 0;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    padding: 0;
+  }
+
+  .section-title {
+    margin-bottom: 25px;
+  }
+
+  .contacts-wrapper {
+    padding: 40px 20px;
+  }
+}
+
+.map-contacts {
+  position: relative;
+  height: 200px;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    height: 300px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+  }
+}
+
+#contacts-map {
+  @extend %pos;
+  z-index: 2;
+}

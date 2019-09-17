@@ -1,0 +1,31 @@
+$light: #A1A8B5;
+$primary: #900020;
+$dark: #181A1E;
+$secondary: #222429;
+
+$body-color: #A1A8B5;
+$body-bg: $dark;
+
+$font-size-base: 1rem;
+$font-family-base: 'HelveticaNeueCyr', sans-serif;
+$headings-font-family: 'Oswald', sans-serif;
+$headings-font-weight: bold;
+$headings-color: #fff;
+
+$link-color: #fff;
+$link-hover-decoration: none;
+$input-btn-focus-width: 0;
+$input-btn-focus-color: rgba(#fff, 0);
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+$border-width: 3px;
+
+$border-radius: 3px;
+$btn-padding-x: 25px;
+$btn-padding-y: 15px;
+
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 3.76;
+$h3-font-size: $font-size-base * 1.875;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.125;
